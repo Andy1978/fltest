@@ -1,7 +1,10 @@
 # data file for the Fltk User Interface Designer (fluid)
-version 1.0300 
+version 1.0110 
 header_name {.h} 
 code_name {.cxx}
+decl {\#include <stdio.h>} {selected public global
+} 
+
 Function {} {open
 } {
   Fl_Window {} {
@@ -10,7 +13,7 @@ Function {} {open
   } {
     Fl_Button {} {
       label {Hello World}
-      callback {printf("Hello, World!\\n");} selected
+      callback {printf("Hello, World!\\n");}
       xywh {100 55 105 25}
     }
   }
