@@ -1,20 +1,23 @@
 # data file for the Fltk User Interface Designer (fluid)
-version 1.0110 
+version 1.0108 
 header_name {.h} 
 code_name {.cxx}
-decl {\#include <FL/fl_message.H>} {selected public global
+decl {\#include <FL/fl_message.H>} {public global
 } 
 
 Function {} {open
 } {
   Fl_Window {} {
-    label {fltest v.0.0.1} open
-    xywh {1812 80 335 250} type Double visible
+    label {fltest v.0.0.1} open selected
+    xywh {2397 170 335 250} type Double visible
   } {
     Fl_Button {} {
       label {Hello World}
       callback {fl_message("Hey, this is better than printf");}
-      xywh {100 55 105 25}
+      xywh {20 130 105 100}
+    }
+    Fl_Value_Output {} {
+      xywh {150 100 135 25}
     }
   }
 } 
